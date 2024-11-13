@@ -13,8 +13,11 @@ body {
     height: 100vh;
     overflow: hidden;
     background-color: #f5f5f5;
+    position: relative; /* Ensure correct positioning of the content */
+    padding: 0 20px; /* Prevents the container from touching the sides on smaller screens */
 }
 
+/* Background */
 .background {
     position: absolute;
     top: 0;
@@ -32,12 +35,14 @@ body {
     to { transform: scale(1.05); }
 }
 
+/* Container */
 .container {
     text-align: center;
     background: rgba(255, 255, 255, 0.8);
     border-radius: 16px;
     padding: 2rem;
     max-width: 400px;
+    width: 100%;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
     backdrop-filter: blur(8px);
     border: 2px solid #a89486;
@@ -90,27 +95,14 @@ header p {
     font-size: 1.1rem;
     font-weight: bold;
     border-radius: 8px;
-    background: rgba(0, 0, 0, 0.1);
+    background-color: #D0B3BE; /* Updated color */
     transition: background-color 0.3s ease, transform 0.3s ease;
     animation: fadeIn 2s ease;
 }
 
 .social-icon:hover {
     transform: scale(1.05);
-    background-color: rgba(0, 0, 0, 0.2);
-}
-
-/* Individual Link Styles */
-.discord {
-    background-color: #D0B3BE;
-}
-
-.twitter {
-    background-color: #D0B3BE;
-}
-
-.youtube {
-    background-color: #D0B3BE;
+    background-color: #b69b94; /* Slightly darker shade for hover */
 }
 
 /* Snowflake Canvas */
