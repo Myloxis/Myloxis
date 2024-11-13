@@ -9,7 +9,7 @@ body {
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     height: 100vh;
     overflow: hidden;
     background-color: #f5f5f5;
@@ -22,7 +22,7 @@ body {
     width: 100%;
     height: auto; /* Keeps the aspect ratio of the GIF */
     display: block;
-    position: relative; /* Keeps it at the top of the page */
+    position: absolute; /* Stays at the top of the page */
     top: 0;
     left: 0;
     z-index: -2; /* Keeps the banner behind the content */
@@ -60,7 +60,7 @@ body {
     border: 2px solid #a89486;
     position: relative;
     z-index: 1;
-    padding-top: 120px; /* Adjust this to give space for the banner */
+    margin-top: 160px; /* Adjust this to give space for the banner */
 }
 
 /* Profile Picture */
