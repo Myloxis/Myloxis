@@ -1,0 +1,85 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d2d2ca;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background: #fff;
+    border-radius: 12px;
+    padding: 2rem;
+    max-width: 350px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Profile Picture */
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px solid #a89486;
+    margin-bottom: 1rem;
+}
+
+/* Header Text */
+header h1 {
+    font-size: 1.8rem;
+    color: #a89486;
+}
+
+header p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 100%;
+    padding: 0.75rem 0;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.twitter {
+    background-color: #1DA1F2;
+}
+
+.instagram {
+    background-color: #E1306C;
+}
+
+.linkedin {
+    background-color: #0077B5;
+}
+
+.github {
+    background-color: #333;
+}
+
+.social-icon:hover {
+    transform: scale(1.05);
+}
