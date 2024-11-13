@@ -17,6 +17,17 @@ body {
     padding: 0 20px; /* Prevents the container from touching the sides on smaller screens */
 }
 
+/* Banner Style */
+.banner {
+    width: 100%;
+    height: auto; /* Keeps the aspect ratio of the GIF */
+    display: block;
+    position: absolute; /* Sticks the banner at the top */
+    top: 0;
+    left: 0;
+    z-index: -2; /* Keeps the banner behind the content */
+}
+
 /* Background */
 .background {
     position: absolute;
@@ -26,7 +37,7 @@ body {
     height: 100%;
     background: radial-gradient(circle at center, #d2d2ca, #a89486);
     opacity: 0.3;
-    z-index: -2;
+    z-index: -1;
     animation: float 10s infinite alternate ease-in-out;
 }
 
@@ -48,6 +59,7 @@ body {
     border: 2px solid #a89486;
     position: relative;
     z-index: 1;
+    padding-top: 120px; /* Adjust this to give space for the banner */
 }
 
 /* Profile Picture */
