@@ -17,16 +17,16 @@ body {
     padding: 0 20px; /* Prevents the container from touching the sides on smaller screens */
 }
 
-/* Banner Style */
+/* Banner Style (Only 20% of the screen height) */
 .banner {
     width: 100%;
-    height: auto; /* Keeps the aspect ratio of the GIF */
+    height: 20vh; /* Adjusted to take up 20% of the screen height */
+    object-fit: cover; /* Ensures the image covers the area without stretching */
     display: block;
     position: absolute; /* Stays at the top of the page */
     top: 0;
     left: 0;
     z-index: -2; /* Keeps the banner behind the content */
-    margin-bottom: 20px; /* Optional: adds space between the banner and the content */
 }
 
 /* Background */
@@ -60,7 +60,7 @@ body {
     border: 2px solid #a89486;
     position: relative;
     z-index: 1;
-    margin-top: 160px; /* Adjust this to give space for the banner */
+    margin-top: 120px; /* Adjust this to give space for the banner */
 }
 
 /* Profile Picture */
