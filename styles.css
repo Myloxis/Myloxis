@@ -13,8 +13,8 @@ body {
     height: 100vh;
     overflow: hidden;
     background-color: #f5f5f5;
-    position: relative; /* Ensure correct positioning of the content */
-    padding: 0 20px; /* Prevents the container from touching the sides on smaller screens */
+    position: relative;
+    padding: 0 20px;
 }
 
 /* Banner Style (Only 20% of the screen height) */
@@ -26,25 +26,25 @@ body {
     position: absolute; /* Stays at the top of the page */
     top: 0;
     left: 0;
-    z-index: -2; /* Keeps the banner behind the content */
+    z-index: -2;
 }
 
-/* Background */
+/* Background with Gradient Animation */
 .background {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle at center, #d2d2ca, #a89486);
-    opacity: 0.3;
-    z-index: -1;
-    animation: float 10s infinite alternate ease-in-out;
+    background: linear-gradient(45deg, #d2d2ca, #a89486, #d2d2ca, #a89486);
+    animation: gradientAnimation 8s ease-in-out infinite;
+    z-index: -1; /* Make sure the background is behind everything else */
 }
 
-@keyframes float {
-    from { transform: scale(1); }
-    to { transform: scale(1.05); }
+@keyframes gradientAnimation {
+    0% { background: linear-gradient(45deg, #d2d2ca, #a89486); }
+    50% { background: linear-gradient(45deg, #a89486, #d2d2ca); }
+    100% { background: linear-gradient(45deg, #d2d2ca, #a89486); }
 }
 
 /* Container */
@@ -60,7 +60,7 @@ body {
     border: 2px solid #a89486;
     position: relative;
     z-index: 1;
-    margin-top: 120px; /* Adjust this to give space for the banner */
+    margin-top: 20vh; /* Adjusted so it starts just below the banner */
 }
 
 /* Profile Picture */
