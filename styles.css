@@ -95,14 +95,14 @@ header p {
     font-size: 1.1rem;
     font-weight: bold;
     border-radius: 8px;
-    background-color: #D0B3BE; /* Color applied here */
+    background-color: #D0B3BE; /* Updated color */
     transition: background-color 0.3s ease, transform 0.3s ease;
     animation: fadeIn 2s ease;
 }
 
 .social-icon:hover {
     transform: scale(1.05);
-    background-color: #c29e94; /* Slightly darker shade for hover */
+    background-color: #b69b94; /* Slightly darker shade for hover */
 }
 
 /* Snowflake Canvas */
