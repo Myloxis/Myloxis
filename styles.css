@@ -22,10 +22,11 @@ body {
     width: 100%;
     height: auto; /* Keeps the aspect ratio of the GIF */
     display: block;
-    position: absolute; /* Sticks the banner at the top */
+    position: relative; /* Keeps it at the top of the page */
     top: 0;
     left: 0;
     z-index: -2; /* Keeps the banner behind the content */
+    margin-bottom: 20px; /* Optional: adds space between the banner and the content */
 }
 
 /* Background */
