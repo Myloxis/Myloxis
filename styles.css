@@ -23,7 +23,7 @@ body {
     height: 100%;
     background: radial-gradient(circle at center, #d2d2ca, #a89486);
     opacity: 0.3;
-    z-index: -1;
+    z-index: -2;
     animation: float 10s infinite alternate ease-in-out;
 }
 
@@ -41,6 +41,8 @@ body {
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
     backdrop-filter: blur(8px);
     border: 2px solid #a89486;
+    position: relative;
+    z-index: 1;
 }
 
 /* Profile Picture */
@@ -109,4 +111,15 @@ header p {
 
 .youtube {
     background-color: #D0B3BE;
+}
+
+/* Snowflake Canvas */
+#snowCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
 }
